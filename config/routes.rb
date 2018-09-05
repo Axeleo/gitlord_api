@@ -12,4 +12,12 @@ Rails.application.routes.draw do
   post   '/users/create'   => 'users#create'
   patch  '/user/:id'       => 'users#update'
   delete '/user/:id'       => 'users#destroy'
+
+  # Hero actions
+
+  get '/heros' => 'heros#index'
+  post '/heros/create' => 'heros#create'
+
+  # Tests
+  get '/test' => 'heros#test'
 end
