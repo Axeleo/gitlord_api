@@ -4,16 +4,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 gem 'bcrypt'
 gem 'pry'
-gem 'graphql-client', '~>0.13.0'
+gem 'graphql-client', '0.2.3'
+gem "graphql", "1.2.2"
 # gem 'graphql-client', "0.4.3"
 # gem "erubis"
+# gem 'haml', '5.0.0.beta.2'
 gem 'active_model_serializers'
 gem 'rack-cors'
 gem 'knock'
 gem 'jwt'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '5.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
