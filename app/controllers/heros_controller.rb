@@ -12,6 +12,7 @@ class HerosController < ApplicationController
 
   CreateHeroExpQuery = GitHub::Client.parse <<-'GRAPHQL'
     # query($owner: owner, $name: name) {
+    query {
 	repository(owner: "Axeleo", name: "social_fretwork") {
 		pullRequests(last:100, states:MERGED) {
       nodes {
